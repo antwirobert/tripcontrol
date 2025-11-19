@@ -1,3 +1,4 @@
+import * as Sentry from "@sentry/react-router";
 import {
   isRouteErrorResponse,
   Links,
@@ -64,6 +65,7 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
         ? "The requested page could not be found."
         : error.statusText || details;
   } else if (import.meta.env.DEV && error && error instanceof Error) {
+    Sentry.captureException(error)
     details = error.message;
     stack = error.stack;
   }
