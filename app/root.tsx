@@ -23,7 +23,14 @@ export const links: Route.LinksFunction = () => [
   },
 ];
 
+import { useEffect } from "react";
+import { registerLicense } from "@syncfusion/ej2-base";
+
 export function Layout({ children }: { children: React.ReactNode }) {
+  useEffect(() => {
+    registerLicense(import.meta.env.VITE_SYNCFUSION_LICENSE_KEY);
+  }, []);
+
   return (
     <html lang="en">
       <head>
