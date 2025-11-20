@@ -1,6 +1,6 @@
 import {Header, TripCard} from "../../../components";
 import {type LoaderFunctionArgs, useSearchParams} from "react-router";
-// import {getAllTrips, getTripById} from "~/appwrite/trips";
+import {getAllTrips, getTripById} from "~/appwrite/trips";
 import {parseTripData} from "~/lib/utils";
 import type {Route} from './+types/trips'
 import {useState} from "react";
@@ -12,20 +12,20 @@ export const loader = async ({ request }: LoaderFunctionArgs) => {
     const page = parseInt(url.searchParams.get('page') || "1", 10);
     const offset = (page - 1) * limit;
 
-    // const { allTrips, total } = await getAllTrips(limit, offset);
+    const { allTrips, total } = await getAllTrips(limit, offset);
 
-    // return {
-    //     trips: allTrips.map(({ $id, tripDetails, imageUrls }) => ({
-    //         id: $id,
-    //         ...parseTripData(tripDetails),
-    //         imageUrls: imageUrls ?? []
-    //     })),
-    //     total
-    // }
+    return {
+        trips: allTrips.map(({ $id, tripDetail, imageUrls }) => ({
+            id: $id,
+            ...parseTripData(tripDetail),
+            imageUrls: imageUrls ?? []
+        })),
+        total
+    }
 }
 
 const Trips = ({ loaderData }: Route.ComponentProps) => {
-    // const trips = loaderData.trips as Trip[] | [];
+    const trips = loaderData?.trips as Trip[] | [];
 
     const [searchParams] = useSearchParams();
     const initialPage = Number(searchParams.get('page') || '1')
@@ -52,7 +52,7 @@ const Trips = ({ loaderData }: Route.ComponentProps) => {
                 </h1>
 
                 <div className="trip-grid mb-4">
-                    {/* {trips.map((trip) => (
+                    {trips.map((trip) => (
                         <TripCard
                             key={trip.id}
                             id={trip.id}
@@ -62,11 +62,11 @@ const Trips = ({ loaderData }: Route.ComponentProps) => {
                             tags={[trip.interests, trip.travelStyle]}
                             price={trip.estimatedPrice}
                         />
-                    ))} */}
+                    ))}
                 </div>
 
                 <PagerComponent
-                    // totalRecordsCount={loaderData.total}
+                    totalRecordsCount={loaderData?.total}
                     pageSize={8}
                     currentPage={currentPage}
                     click={(args) => handlePageChange(args.currentPage)}
