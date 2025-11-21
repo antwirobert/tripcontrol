@@ -1,5 +1,5 @@
 <a href="https://antwi-tripcontrol.vercel.app" target="_blank">
-    <img src="public/images/screenshot.png" alt="Project Banner">
+    <img src="public/assets/images/screenshot.png" alt="Project Banner">
 </a>
 
 # TripControl – AI-Powered Travel Agency Platform
@@ -116,7 +116,10 @@ Search & filtering: Quickly find users or trips using advanced filters
 
 🌐 Live Demo
 
-Check out the live deployment: [TripControl](https://antwi-tripcontrol.vercel.app/)
+Check out the live deployment: 
+<a href="https://antwi-tripcontrol.vercel.app" target="_blank">
+    TripControl
+</a>
 
 
 📁 Project Structure
