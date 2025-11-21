@@ -117,9 +117,7 @@ Search & filtering: Quickly find users or trips using advanced filters
 🌐 Live Demo
 
 Check out the live deployment: 
-<a href="https://antwi-tripcontrol.vercel.app" target="_blank">
-    TripControl
-</a>
+[TripControl](https://antwi-tripcontrol.vercel.app)
 
 
 📁 Project Structure
@@ -152,4 +150,5 @@ Please ensure code is clean, modular, and follows the existing structure.
 👨‍💻 Author
 
 Robert Antwi – Software engineer
-[GitHub](https://github.com/antwirobert/) [LinkedIn](https://www.linkedin.com/in/robert-antwi-a0aab9277/)
+[GitHub](https://github.com/antwirobert/) 
+[LinkedIn](https://www.linkedin.com/in/robert-antwi-a0aab9277/)
