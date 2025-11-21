@@ -47,22 +47,17 @@
 ```bash
 # Clone the repository
 git clone https://github.com/<your-username>/tripcontrol.git
-
 # Navigate to the project folder
 cd tripcontrol
-
+```
+```bash
 # Install dependencies
 npm install
 # or
 yarn install
+```
 
-# Run the development server
-npm run dev
-# or
-yarn dev
-
-Visit http://localhost:5173
-
+```bash
 VITE_SYNCFUSION_LICENSE_KEY=<your-syncfusion-license-key>
 VITE_APPWRITE_API_ENDPOINT=<your-appwrite-endpoint>
 VITE_APPWRITE_API_KEY=<your-appwrite-key>
@@ -72,6 +67,16 @@ VITE_APPWRITE_USER_TABLE_ID=<your-user-table-id>
 VITE_APPWRITE_TRIP_TABLE_ID=<your-trip-table-id>
 GEMINI_API_KEY=<your-gemini-api-key>
 UNSPLASH_ACCESS_KEY=<your-unsplash-access-key>
+```
+
+```bash
+# Run the development server
+npm run dev
+# or
+yarn dev
+```
+
+Open http://localhost:5173 in your browser to view the project.
 
 🎨 UI & Components
 
