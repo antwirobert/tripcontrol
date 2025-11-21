@@ -1,3 +1,7 @@
+<a href="https://antwi-tripcontrol.vercel.app" target="_blank">
+    <img src="public/images/screenshot.png" alt="Project Banner">
+</a>
+
 # TripControl – AI-Powered Travel Agency Platform
 
 **TripControl** is a modern travel agency platform featuring an **AI-powered trip itinerary generator**, a **public booking website**, and a **robust admin dashboard**. Built with scalability, modularity, and a smooth user experience in mind, TripControl leverages cutting-edge technologies to make trip planning and management seamless for both users and admins.
@@ -78,6 +82,7 @@ yarn dev
 
 Open http://localhost:5173 in your browser to view the project.
 
+
 🎨 UI & Components
 
 Reusable components: Header, StatsCard, TripCard, Sidebar, Charts, Tables
@@ -88,6 +93,7 @@ Interactive charts: Column and SplineArea charts for user and trip analytics
 
 Detailed trip pages: Overview, images, interests, travel styles, and pricing
 
+
 🔒 Authentication & Security
 
 Secure user login via Google OAuth using Appwrite
@@ -95,6 +101,7 @@ Secure user login via Google OAuth using Appwrite
 Role-based access control: Admins have full dashboard access; regular users see only public features
 
 Persistent session management for seamless navigation
+
 
 📊 Admin Dashboard
 
@@ -106,19 +113,11 @@ CRUD functionality: Create, update, delete trips and manage user data
 
 Search & filtering: Quickly find users or trips using advanced filters
 
-⚡ Future Improvements
-
-AI-powered question & answer assistant for travel recommendations
-
-Customizable trip packages based on user preferences
-
-Email notifications for booking confirmations and trip updates
-
-Integration with payment gateways for seamless trip bookings
 
 🌐 Live Demo
 
 Check out the live deployment: [TripControl](https://antwi-tripcontrol.vercel.app/)
+
 
 📁 Project Structure
 tripcontrol/
@@ -130,6 +129,7 @@ tripcontrol/
 ├─ lib/                  # Utility functions
 ├─ constants/            # App constants like chart configs
 └─ main.tsx              # Entry point
+
 
 📝 Contributing
 
@@ -145,7 +145,8 @@ Submit a pull request
 
 Please ensure code is clean, modular, and follows the existing structure.
 
+
 👨‍💻 Author
 
 Robert Antwi – Software engineer
-GitHub LinkedIn
+[GitHub](https://github.com/antwirobert/) [LinkedIn](https://www.linkedin.com/in/robert-antwi-a0aab9277/)
