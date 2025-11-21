@@ -82,7 +82,7 @@ yarn dev
 
 Open http://localhost:5173 in your browser to view the project.
 
-
+<br />
 🎨 UI & Components
 
 Reusable components: Header, StatsCard, TripCard, Sidebar, Charts, Tables
@@ -93,6 +93,7 @@ Interactive charts: Column and SplineArea charts for user and trip analytics
 
 Detailed trip pages: Overview, images, interests, travel styles, and pricing
 
+<br />
 
 🔒 Authentication & Security
 
@@ -102,6 +103,7 @@ Role-based access control: Admins have full dashboard access; regular users see 
 
 Persistent session management for seamless navigation
 
+<br />
 
 📊 Admin Dashboard
 
@@ -113,13 +115,16 @@ CRUD functionality: Create, update, delete trips and manage user data
 
 Search & filtering: Quickly find users or trips using advanced filters
 
+<br />
 
 🌐 Live Demo
 
 Check out the live deployment: 
 [TripControl](https://antwi-tripcontrol.vercel.app)
 
+<br />
 
+```txt
 📁 Project Structure
 tripcontrol/
 ├─ routes/               # All page routes
@@ -130,7 +135,9 @@ tripcontrol/
 ├─ lib/                  # Utility functions
 ├─ constants/            # App constants like chart configs
 └─ main.tsx              # Entry point
+```
 
+<br />
 
 📝 Contributing
 
@@ -146,6 +153,7 @@ Submit a pull request
 
 Please ensure code is clean, modular, and follows the existing structure.
 
+<br />
 
 👨‍💻 Author
 
