@@ -139,24 +139,15 @@ tripcontrol/
 
 <br />
 
-📝 Contributing
+🤝 Contributing
 
-Contributions are welcome!
-
-Fork the repository
-
-Create a new branch (git checkout -b feature/your-feature)
-
-Make your changes
-
-Submit a pull request
-
-Please ensure code is clean, modular, and follows the existing structure.
+Contributions are welcome! Please submit an issue or pull request.
 
 <br />
 
-👨‍💻 Author
+🧑‍💻 Author
 
-Robert Antwi – Software engineer
+Robert Antwi
+Creator of TripControl
 [GitHub](https://github.com/antwirobert/) 
 [LinkedIn](https://www.linkedin.com/in/robert-antwi-a0aab9277/)
